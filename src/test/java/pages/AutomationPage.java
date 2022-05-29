@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
@@ -75,6 +76,68 @@ public class AutomationPage {
 
     @FindBy(xpath="//div[@class='features_items']")
     public WebElement brandsHMProducts;
+
+    @FindBy(xpath="//div[@class='features_items']")
+    public WebElement allProducts;
+
+    @FindBy(xpath = "//input[@id='search_product']")
+    public WebElement searchProduct;
+
+    @FindBy(xpath="//i[@class='fa fa-search']")
+    public WebElement searchProductButton;
+
+    @FindBy(xpath="//div[@class='features_items']")
+    public WebElement searchProductResults;
+
+    @FindBy(xpath="//a[@data-product-id='2']")
+    public WebElement products1;
+
+    @FindBy(xpath="//a[@data-product-id='28']")
+    public WebElement products2;
+
+    @FindBy(xpath="//a[@data-product-id='29']")
+    public WebElement products3;
+
+    @FindBy(xpath="//a[@data-product-id='30']")
+    public WebElement products4;
+
+    @FindBy(xpath="//a[@data-product-id='31']")
+    public WebElement products5;
+
+    @FindBy(xpath="//a[@data-product-id='43']")
+    public WebElement products6;
+
+    @FindBy(xpath="//*[text()='Continue Shopping']")
+    public WebElement continueShopping;
+
+    @FindBy(xpath="//i[@class='fa fa-shopping-cart']")
+    public WebElement card;
+
+    @FindBy(xpath="//*[text()=' Signup / Login']")
+    public WebElement signupLoginButton;
+
+    @FindBy(xpath="//input[@placeholder='Name']")
+    public WebElement newUserName;
+
+    @FindBy(xpath="//input[@placeholder='Email Address']")
+    public WebElement newUserEmail;
+
+    @FindBy(xpath="(//button[@type='submit'])[2]")
+    public WebElement signUpButton;
+
+    @FindBy(id="cart_items")
+    public WebElement shoppingCartHome;
+
+
+
+
+
+
+
+
+
+
+
 
 
 

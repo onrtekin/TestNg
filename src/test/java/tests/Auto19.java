@@ -31,9 +31,5 @@ public class Auto19 {
         Assert.assertTrue(automationPage.brandsHMProducts.isDisplayed());
         Driver.closeDriver();
 
-
-
-
-
     }
 }
