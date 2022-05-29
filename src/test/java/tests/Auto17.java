@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.AutomationPage;
+import utilities.ConfigReader;
 import utilities.Driver;
 /*
 1. Launch browser
@@ -21,7 +22,7 @@ public class Auto17 {
     @Test
     public void test() throws InterruptedException {
         AutomationPage automationPage = new AutomationPage();
-        Driver.getDriver().get("http://automationexercise.com");
+        Driver.getDriver().get(ConfigReader.getProperty("automationUrl"));
         Assert.assertTrue(automationPage.homePage.isDisplayed());
         Driver.getDriver().findElement(By.xpath("//a[@data-product-id='2']")).click();
         automationPage.viewCart.click();

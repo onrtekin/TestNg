@@ -18,6 +18,35 @@ public class AutomationPage {
     public WebElement cartPage;
     @FindBy(xpath="//tbody")
     public WebElement product;
+    @FindBy(xpath="//*[text()='Category']")
+    public WebElement category;
+    @FindBy(xpath="(//span[@class='badge pull-right'])[1]")
+    public WebElement womenCategory;
+
+    @FindBy(xpath="(//span[@class='badge pull-right'])[2]")
+    public WebElement menCategory;
+
+    @FindBy(xpath="(//span[@class='badge pull-right'])[3]")
+    public WebElement kidsCategory;
+    @FindBy(xpath="//*[text()='Dress ']")
+    public WebElement dressWomenCategory;
+    @FindBy(xpath="//div[@class='panel-body']//li[2]")
+    public WebElement topsWomenCategory;
+    @FindBy(xpath="//div[@class='panel-body']//li[3]")
+    public WebElement sareeWomenCategory;
+    @FindBy(xpath="//div[@class='left-sidebar']")
+    public WebElement categoryPage;
+    @FindBy(xpath="//*[text()='Women - Dress Products']")
+    public WebElement womenDressProduct;
+    @FindBy(xpath="//*[text()='Tshirts ']")
+    public WebElement tshirtMenCategory;
+    @FindBy(xpath="//div[@id='Men']//li[2]")
+    public WebElement jeansMenCategory;
+    @FindBy(xpath="//*[text()='Men - Tshirts Products']")
+    public WebElement menTshirtProduct;
+
+
+
 
 
 
