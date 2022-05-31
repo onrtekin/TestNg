@@ -149,6 +149,18 @@ public class AutomationPage {
     @FindBy(xpath="//*[text()='Thank you for your review.']")
     public WebElement thaksYourReview;
 
+    @FindBy(xpath="//*[text()='recommended items']")
+    public WebElement recommendedItems;
+
+    @FindBy(xpath="//a[@data-product-id='5']")
+    public WebElement productsRecommended;
+
+    @FindBy(xpath="//div[@id='cart_info']")
+    public WebElement cartInfo;
+
+
+
+
 
 
 
