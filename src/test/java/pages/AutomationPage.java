@@ -158,6 +158,16 @@ public class AutomationPage {
     @FindBy(xpath="//div[@id='cart_info']")
     public WebElement cartInfo;
 
+    @FindBy(xpath="//*[text()='Subscription']")
+    public WebElement subscription;
+
+    @FindBy(xpath="//i[@class='fa fa-angle-up']")
+    public WebElement upwardArrow;
+
+    @FindBy(xpath="//*[text()='Full-Fledged practice website for Automation Engineers']")
+    public WebElement practiceAE;
+
+
 
 
 
