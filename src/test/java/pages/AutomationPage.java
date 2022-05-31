@@ -128,6 +128,30 @@ public class AutomationPage {
     @FindBy(id="cart_items")
     public WebElement shoppingCartHome;
 
+    @FindBy(xpath="(//*[text()='View Product'])[2]")
+    public WebElement viewCartProduct2;
+
+    @FindBy(xpath="//*[text()='Write Your Review']")
+    public WebElement writeYourReview;
+
+    @FindBy(xpath="//input[@id='name']")
+    public WebElement reviewYourName;
+
+    @FindBy(xpath="//input[@id='email']")
+    public WebElement reviewEmail;
+
+    @FindBy(xpath="//textarea[@name='review']")
+    public WebElement reviewTextArea;
+
+    @FindBy(xpath="//button[@id='button-review']")
+    public WebElement reviewButton;
+
+    @FindBy(xpath="//*[text()='Thank you for your review.']")
+    public WebElement thaksYourReview;
+
+
+
+
 
 
 
